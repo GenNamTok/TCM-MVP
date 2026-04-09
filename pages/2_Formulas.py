@@ -195,7 +195,7 @@ def _find_headers(lines):
 @st.cache_data
 def load_formulas():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    md_path = os.path.join(script_dir, 'formulas.md')
+    md_path = os.path.join(script_dir, '..', 'formulas.md')
     with open(md_path, encoding='utf-8') as f:
         content = f.read()
     lines = content.split('\n')
